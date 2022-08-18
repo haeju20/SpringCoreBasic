@@ -14,20 +14,6 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class AppConfig {
-    //@Bean memberService -> new MemoryMemberRepository()
-    //@Bean orderService -> new MemoryMemberRepository()
-    //싱글톤이 깨지는 문제?
-
-    //call AppConfig.memberService
-    //call AppConfig.memberRepository
-    //call AppConfig.memberRepository
-    //call AppConfig.orderService
-    //call AppConfig.memberRepository
-
-    //call AppConfig.memberService
-    //call AppConfig.memberRepository
-    //call AppConfig.orderService
-
     @Bean
     public MemberService memberService() {
         System.out.println("call AppConfig.memberService");
