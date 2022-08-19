@@ -13,7 +13,6 @@ public class OrderServiceImpl implements OrderService{
     private final DiscountPolicy discountPolicy;
     //private final DiscountPolicy discountPolicy = new FixDiscountPolicy();
 
-    @Autowired
     public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
         this.memberRepository = memberRepository;
         this.discountPolicy = discountPolicy;
